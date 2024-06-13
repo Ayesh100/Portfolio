@@ -1,0 +1,97 @@
+.skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.skill-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-heading h1{
+    width: fit-content;
+    position: relative;
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+.skill-heading h1::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: -5px;
+    left: 0;
+    animation: change 2s infinite linear;
+  
+}
+
+.skill-heading h1::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    animation: change 2s infinite linear;
+    
+}
+
+.skill-span1{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    left: -5px;
+    animation: change 2s infinite linear;
+}
+.skill-span2{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    right: -5px;
+    animation: change 2s infinite linear;
+}
+
+@keyframes change {
+    0%{
+        background-color: rgb(40, 172, 224);
+    }
+    50%{
+        background-color: rgb(43, 255, 135);
+    }
+    100%{
+        background-color: rgb(40, 172, 224);
+    }
+}
+
+.logos{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.logos1,.logos2{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos1 div, .logos2 div{
+    width: 100%;
+    text-align: center;
+}
+
+ .logos1 div img, .logos2 div img{
+    width: 150px;
+    height: 150px;
+ }
